@@ -37,7 +37,7 @@ const Features = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <motion.h2 className="text-3xl font-bold text-center text-gray-800 mb-12" variants={fadeIn} >
+          <motion.h2 className="text-3xl font-bold text-center bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-stone-600 via-stone-900 to-white bg-clip-text text-transparent mb-12" variants={fadeIn} >
             Key Features
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -95,7 +95,7 @@ const Features = () => {
             ].map((feature, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="bg-white border-rose-600 rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 variants={fadeIn}
                 whileHover={{ y: -5 }}
               >

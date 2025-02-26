@@ -29,7 +29,7 @@ function Faq() {
             {[
               {
                 name: "Alex",
-                quote: "SecretFeel helped me connect with my crush. We're now dating!",
+                quote: "Dear U helped me connect with my crush. We're now dating!",
                 avatar: "/placeholder.svg?height=80&width=80",
               },
               {
@@ -82,7 +82,7 @@ function Faq() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                question: "Is SecretFeel really anonymous?",
+                question: "Is  Dear U really anonymous?",
                 answer:
                   "Yes, all confessions and messages are completely anonymous unless both parties choose to reveal their identities.",
               },
@@ -92,7 +92,7 @@ function Faq() {
                   "When two users confess to each other, they're notified of a mutual match and can start chatting.",
               },
               {
-                question: "Can I use SecretFeel for friendship?",
+                question: "Can I use Dear u for friendship?",
                 answer: "We have a Friendship Mode for platonic connections and admiration.",
               },
               {
