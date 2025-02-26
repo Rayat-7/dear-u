@@ -35,7 +35,7 @@ const Features = () => {
           variants={staggerChildren}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <motion.h2 className="text-3xl font-bold text-center bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-stone-600 via-stone-900 to-white bg-clip-text text-transparent mb-12" variants={fadeIn} >
             Key Features
