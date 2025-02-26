@@ -27,10 +27,10 @@ const fadeIn = {
   }
 const Features = () => {
   return (
-    <div className='relative p-2 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-white via-rose-100 to-rose-200'>
+    <div  id="features" className='relative p-2 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-white via-rose-100 to-rose-200'>
         
         <motion.section
-          id="features"
+          
           className="container mx-auto px-4 py-2 "
           variants={staggerChildren}
           initial="hidden"

@@ -38,7 +38,7 @@ export function SignupForm() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Password</Label>
-          <Input id="password" placeholder="" type="password" />
+          <Input id="password" placeholder="......" type="password" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-8">
           <Label htmlFor="twitterpassword">Your DearU password</Label>
