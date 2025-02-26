@@ -1,4 +1,4 @@
-import { Home, Waypoints, MessageCircleCode, MessageCircleHeart, FileHeart, } from 'lucide-react'
+import { Home, Waypoints, MessageCircleCode, MessageCircleHeart, FileHeart, User, } from 'lucide-react'
 import { NavBar } from "@/components/ui/tubelight-navbar"
 import { motion } from 'framer-motion'
 export function NavBarDemo() {
@@ -6,7 +6,8 @@ export function NavBarDemo() {
     { name: 'Home', url: '#', icon: Home },
     { name: 'Features', url: '#features', icon: FileHeart },
     { name: 'How It Works', url: '#how-it-works', icon: Waypoints },
-    { name: 'FAQ', url: '#faq', icon: MessageCircleCode }
+    { name: 'Privacy', url: '/pages/privacy', icon: MessageCircleCode },
+    { name: 'Login', url:'/pages/login', icon:User}
   ]
 
   return (
