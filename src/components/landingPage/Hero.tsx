@@ -21,7 +21,7 @@ export function Hero() {
          initial={{ opacity: 0, y: 20 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ duration: 0.8, delay: 0.2 }}
-         className=" text-4xl md:text-8xl font-bold pointer-events-none whitespace-pre-wrap bg-gradient-to-t from-black via-rose-700 to-rose-600 bg-clip-text leading-none text-transparent shine-effect">
+         className=" text-6xl md:text-8xl font-bold pointer-events-none whitespace-pre-wrap bg-gradient-to-t from-black via-rose-700 to-rose-600 bg-clip-text leading-none text-transparent shine-effect">
           {/* <TypingAnimation className="text-7xl">Dear U</TypingAnimation> */}
           {/* <TextAnimate className="" animation="slideLeft" by="character"> */}
       Dear 'U'
@@ -66,7 +66,7 @@ export function Hero() {
    
     <Link href='/pages/privacy'>
     <Button variant="outline" className=" p-5 md:p-7 rounded-full bg-transparent border border-rose-600">
-  <span className="text-center  text-black  text-lg">
+  <span className="text-center  text-black  ">
     Privacy Policy
   </span>
 </Button>
