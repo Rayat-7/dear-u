@@ -1,9 +1,17 @@
 import React from "react";
 import { SignupForm } from "@/components/ui/signup-form";
+import Link from "next/link";
+import { ArrowLeft, Home } from "lucide-react";
 
 export default function SignupFormDemo() {
   return (
     <div className=" flex p-12 items-center justify-center bg-rose-50">
+       <Link href="/">
+      <p className="absolute top-4 left-4 p-2 bg-white rounded-full shadow-md flex items-center">
+        <ArrowLeft className="w-6 h-6 text-black" />
+        <Home className="ml-2 h-6 text-rose-600">Home</Home>
+      </p>
+    </Link>
       <SignupForm />
     </div>
   );
