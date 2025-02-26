@@ -1,13 +1,15 @@
 "use client";
 
-import Ribbons from "../ui/Ribbons";
 import { Particles } from "@/components/ui/Particles";
 import { TextAnimate } from "../magicui/text-animate";
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { ShimmerButton } from "../magicui/shimmer-button";
+import Link from "next/link";
+import router, { useRouter } from "next/router";
 
 export function Hero() {
+ 
   return (
     <div className="relative flex h-screen w-full bg-black flex-col items-center justify-center overflow-hidden rounded-lg border md:shadow-xl">
       {/* Background Particles */}
@@ -28,7 +30,7 @@ export function Hero() {
         </motion.div>
         <motion.p 
         // bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-stone-400 via-stone-900 to-white bg-clip-text text-transparent
-            className="text-xl md:text-5xl p-2 h-14 font-bold bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-stone-400 via-stone-900 to-white bg-clip-text text-transparent   "
+            className="text-xl md:text-5xl p-2 md:h-16 font-bold bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-stone-400 via-stone-900 to-white bg-clip-text text-transparent   "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -47,37 +49,35 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
+            className=" flex gap-5"
           >
             {/* <Button className="bg-gradient-to-t from-rose-900 via-rose-700 to-rose-600 hover:bg-pink-600 text-white text-lg px-8 py-4">Start Confessing</Button> */}
+            
+            <Link href='/pages/login'>
             <ShimmerButton className="shadow-2xl bg-white">
+            
       <span className="whitespace-pre-wrap text-center text-sm  font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
       Start Confessing
       </span>
+      
     </ShimmerButton>
+    </Link>
+   
+   
+    <Link href='/pages/privacy'>
+    <Button variant="outline" className=" p-5 md:p-7 rounded-full bg-transparent border border-rose-600">
+  <span className="text-center  text-black  text-lg">
+    Privacy Policy
+  </span>
+</Button>
+</Link>
+
+    
           </motion.div>
 
       </div>
 
-      {/* Ribbons */}
-      <div className="absolute inset-0 z-10">
-        <Ribbons
-          baseThickness={30}
-          colors={["#e11d48"]}
-          speedMultiplier={0.5}
-          maxAge={500}
-          enableFade={false}
-          enableShaderEffect={false}
-        />
-        
-        {/* <Ribbons
-          baseThickness={12} // Slightly thicker for variation
-          colors={["#f43f5e"]} // A slightly lighter red-pink shade
-          speedMultiplier={0.55} // Moves at a slightly different speed for a natural effect
-          maxAge={500}
-          enableFade={false}
-          enableShaderEffect={false}
-        /> */}
-      </div>
+      
     </div>
   );
 }

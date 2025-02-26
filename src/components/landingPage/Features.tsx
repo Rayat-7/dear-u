@@ -15,7 +15,7 @@ import {
     X,
   } from "lucide-react"
 import React from 'react'
-import Ribbons from '../ui/Ribbons'
+
 const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -28,18 +28,10 @@ const fadeIn = {
 const Features = () => {
   return (
     <div className='relative p-2 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-white via-rose-100 to-rose-200'>
-        <div className="absolute inset-0 z-10">
-        <Ribbons
-          baseThickness={30}
-          colors={["#e11d48"]}
-          speedMultiplier={0.5}
-          maxAge={500}
-          enableFade={false}
-          enableShaderEffect={false}
-        /></div>
+        
         <motion.section
           id="features"
-          className="container mx-auto px-4 py-20 "
+          className="container mx-auto px-4 py-2 "
           variants={staggerChildren}
           initial="hidden"
           whileInView="visible"
