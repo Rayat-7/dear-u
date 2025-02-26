@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Heart, ArrowLeft } from 'lucide-react';
+import { Heart, ArrowLeft, Home } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Link from 'next/link';
 
@@ -345,11 +345,11 @@ const Policy: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <Link href="/">
-              <button className="flex items-center">
-                <ArrowLeft className="h-5 w-5 text-gray-600 mr-2" />
-                <span className="text-gray-600">Back to Home</span>
-              </button>
+            <Link href="/">
+                <p className="absolute top-4 left-4 p-2 bg-white rounded-full shadow-md flex items-center">
+                  <ArrowLeft className="w-6 h-6 text-black" />
+                  <Home className="ml-2 h-6 text-rose-600">Home</Home>
+                </p>
               </Link>
             </div>
             <div className="flex items-center">
